@@ -8,6 +8,7 @@
 
     <!-- Bootstrap -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="http://twitter.github.io/bootstrap/assets/css/bootstrap-responsive.css">
     <!-- CUSTOM STYLES -->
     <title>Homepage - Material Design
     </title>
@@ -15,30 +16,36 @@
 
 <body>
     <!-- NAVBAR -->
-    <nav class="navbar navbar-expand navbar-dark bg-dark p-3 shadow-lg">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark p-3 shadow-lg">
         <a class="navbar-brand" href="#">MATERIAL DESIGN</a>
-        <div class="navbar-nav ml-auto">
-            <a class="nav-item nav-link active mr-2" href="#">Design</a>
-            <a class="nav-item nav-link mr-4" href="#">Components</a>
-            <a class="nav-item nav-link mr-4" href="#">Develop</a>
-            <a class="nav-item nav-link mr-4" href="#">Resources</a>
-            <a class="nav-item nav-link mr-4" href="#">Blog</a>
-            <a class="nav-item nav-link mx-4" href="#">
-                <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-search" fill="currentColor"
-                    xmlns="http://www.w3.org/2000/svg">
-                    <path fill-rule="evenodd"
-                        d="M10.442 10.442a1 1 0 0 1 1.415 0l3.85 3.85a1 1 0 0 1-1.414 1.415l-3.85-3.85a1 1 0 0 1 0-1.415z" />
-                    <path fill-rule="evenodd"
-                        d="M6.5 12a5.5 5.5 0 1 0 0-11 5.5 5.5 0 0 0 0 11zM13 6.5a6.5 6.5 0 1 1-13 0 6.5 6.5 0 0 1 13 0z" />
-                </svg>
-            </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse">
+            <div class="navbar-nav ml-auto">
+                <a class="nav-item nav-link active mr-2" href="#">Design</a>
+                <a class="nav-item nav-link mr-4" href="#">Components</a>
+                <a class="nav-item nav-link mr-4" href="#">Develop</a>
+                <a class="nav-item nav-link mr-4" href="#">Resources</a>
+                <a class="nav-item nav-link mr-4" href="#">Blog</a>
+                <a class="nav-item nav-link mx-4" href="#">
+                    <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-search" fill="currentColor"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd"
+                            d="M10.442 10.442a1 1 0 0 1 1.415 0l3.85 3.85a1 1 0 0 1-1.414 1.415l-3.85-3.85a1 1 0 0 1 0-1.415z" />
+                        <path fill-rule="evenodd"
+                            d="M6.5 12a5.5 5.5 0 1 0 0-11 5.5 5.5 0 0 0 0 11zM13 6.5a6.5 6.5 0 1 1-13 0 6.5 6.5 0 0 1 13 0z" />
+                    </svg>
+                </a>
+            </div>
         </div>
     </nav>
 
     <!-- HERO -->
     <div class="jumbotron text-center text-white bg-dark rounded-0">
-        <div class="row justify-content-center">
-            <div class="col-lg-4 mb-5">
+        <div class="row">
+            <div class="offset-1 col-10 mb-5">
                 <div class="mt-5">
                     <svg width="3em" height="3em" class="bi " viewBox="0 0 96 96" fill="currentColor"
                         xmlns="http://www.w3.org/2000/svg">
@@ -53,20 +60,18 @@
                     digital
                     experiences.
                 </p>
-                <div class="mt-3">
-                    <div class="btn btn-primary mr-4 bg-dark border-white">GET STARTED</div>
-                    <div class="btn btn-primary bg-dark border-white">
-                        <svg width="1.5em" height="1.5em" viewBox="0 1 16 16" class="bi bi-play-fill"
-                            fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                            <path
-                                d="M11.596 8.697l-6.363 3.692c-.54.313-1.233-.066-1.233-.697V4.308c0-.63.692-1.01 1.233-.696l6.363 3.692a.802.802 0 0 1 0 1.393z" />
-                        </svg>
-                        WATCH VIDEO</div>
-                </div>
+                <div class="btn m-2 btn-primary bg-dark border-white">GET STARTED</div>
+                <div class="btn m-2 btn-primary bg-dark border-white">
+                    <svg width="1.2em" height="1.2em" viewBox="0 1 16 16" class="bi bi-play-fill" fill="currentColor"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M11.596 8.697l-6.363 3.692c-.54.313-1.233-.066-1.233-.697V4.308c0-.63.692-1.01 1.233-.696l6.363 3.692a.802.802 0 0 1 0 1.393z" />
+                    </svg>
+                    WATCH VIDEO</div>
             </div>
         </div>
     </div>
-
+    </div>
     <!-- BENEFITS -->
     <div class="container pb-5 pt-5">
         <div class="pb-4">
@@ -74,14 +79,14 @@
             <p>Use our most popular design and development resources to jumpstart your latest project</p>
         </div>
         <div class="row">
-            <div class="card col-lg-4 pl-3 border-0" style="width: 18rem;">
+            <div class="card col-lg-4 col-sm-6 col-12 border-0">
                 <img class="card-img-top" src="./assets/mdg.png" alt="Card image cap">
                 <div class="card-body">
                     <h5 class="card-title">Material Design Guidelines</h5>
                     <p class="card-text">Material design principles, styles, best practices</p>
                 </div>
             </div>
-            <div class="card col-lg-4 pl-3 border-0" style="width: 18rem;">
+            <div class="card col-lg-4 col-sm-6 col-12 border-0">
                 <img class="card-img-top" src="./assets/com.png" alt="Card image cap">
                 <div class="card-body">
                     <h5 class="card-title">Components</h5>
@@ -89,7 +94,7 @@
                     </p>
                 </div>
             </div>
-            <div class="card col-lg-4 pl-3 border-0" style="width: 18rem;">
+            <div class="card col-lg-4 col-sm-6 col-12 border-0">
                 <img class="card-img-top" src="./assets/icn.png" alt="Card image cap">
                 <div class="card-body">
                     <h5 class="card-title">Icons</h5>
@@ -97,16 +102,14 @@
                         sizes</p>
                 </div>
             </div>
-        </div>
-        <div class="row pt-5">
-            <div class="card col-lg-4 pl-3 border-0" style="width: 18rem;">
+            <div class="card col-lg-4 col-sm-6 col-12 border-0">
                 <img class="card-img-top" src="./assets/mcw.png" alt="Card image cap">
                 <div class="card-body">
                     <h5 class="card-title">Material Components for the web</h5>
                     <p class="card-text">Implement and customize Material web apps with our code and documentation</p>
                 </div>
             </div>
-            <div class="card col-lg-4 pl-3 border-0" style="width: 18rem;">
+            <div class="card col-lg-4 col-sm-6 col-12 border-0">
                 <img class="card-img-top" src="./assets/acg.png" alt="Card image cap">
                 <div class="card-body">
                     <h5 class="card-title">Accessibility guidelines</h5>
@@ -115,7 +118,7 @@
                     </p>
                 </div>
             </div>
-            <div class="card col-lg-4 pl-3 border-0" style="width: 18rem;">
+            <div class="card col-lg-4 col-sm-6 col-12 border-0">
                 <img class="card-img-top" src="./assets/dvt.png" alt="Card image cap">
                 <div class="card-body">
                     <h5 class="card-title">Developer Tutorials</h5>
@@ -126,82 +129,110 @@
         </div>
     </div>
     <!-- News -->
-    <div class="mt-5 d-flex justify-content-center text-center">
-        <div class="col-lg-6">
-            <h3>What's new</h3>
-            <p>Get the latest updates on guidelines, components, and documentation across platforms</p>
-            <div class="text-left mt-5">
-                <p>OCTOBER 20, 2020</p>
-                <a href="#">Material YouTube channel</a>
-                <p>New home for video tutorials, livestreams, and Q&As</p>
+    <div class="container mt-5 text-center">
+        <div class="row">
+            <div class="offset-1 col-10">
+                <h3>What's new</h3>
+                <p>Get the latest updates on guidelines, components, and documentation across platforms</p>
+                <div class="text-left mt-5">
+                    <p>OCTOBER 20, 2020</p>
+                    <a href="#">Material YouTube channel</a>
+                    <p>New home for video tutorials, livestreams, and Q&As</p>
+                </div>
+                <div class="text-left mt-5">
+                    <p>SEPTEMBER 1, 2020</p>
+                    <a href="#">Material blog</a>
+                    <p>New space on material.io for news, guides, updates, and more</p>
+                </div>
+                <div class="text-left mt-5">
+                    <p>AUGUST 26, 2020</p>
+                    <a href="#">Android - Compose Theme Adapter</a>
+                    <p>New library to ease migration and interoperability with Jetpack Compose by extracting color,
+                        type,
+                        and shape theming
+                        values</p>
+                </div>
+                <div class="btn btn-primary bg-light text-dark border-dark mt-4 mb-5 rounded-0">VIEW ALL</div>
             </div>
-            <div class="text-left mt-5">
-                <p>SEPTEMBER 1, 2020</p>
-                <a href="#">Material blog</a>
-                <p>New space on material.io for news, guides, updates, and more</p>
-            </div>
-            <div class="text-left mt-5">
-                <p>AUGUST 26, 2020</p>
-                <a href="#">Android - Compose Theme Adapter</a>
-                <p>New library to ease migration and interoperability with Jetpack Compose by extracting color, type,
-                    and shape theming
-                    values</p>
-            </div>
-            <div class="btn btn-primary bg-light text-dark border-dark mt-4 mb-5 rounded-0">VIEW ALL</div>
         </div>
     </div>
 
     <!-- Learn More-->
-    <div class="mt-5 py-5 d-flex justify-content-center bg-light">
-        <div class="col-lg-10">
-            <div class="text-left">
-                <h3>Learn More</h3>
-                <p>Browse our favorite Material videos, articles, and tutorials</p>
+    <div class="mt-5 py-5 bg-light">
+        <div class="container">
+            <div class="row">
+                <div class="pl-3 text-left">
+                    <h3>Learn More</h3>
+                    <p>Browse our favorite Material videos, articles, and tutorials</p>
+                </div>
             </div>
-            <div class="row pt-4">
-                <div class="card col-lg-4 pl-3 border-0" style="width: 18rem;">
+            <div class="row">
+                <div class="card col-lg-4 col-12 border-0">
                     <img class="card-img-top" src="./assets/mdc.png" alt="Card image cap">
                     <div class="card-body">
                         <h5 class="card-title">Material Design’s new channel</h5>
                         <p>YouTube</p>
-                        <p class="card-text">A home for step-by-step design & developer tutorials, #AskMaterial
+                        <p class="card-text">A home for step-by-step design & developer tutorials,
+                            #AskMaterial
                             questions, and videos from the team
                         </p>
                     </div>
                 </div>
-                <div class="card col-lg-4 pl-3 border-0" style="width: 18rem;">
+                <div class="card col-lg-4 col-12 border-0">
                     <img class="card-img-top" src="./assets/fab.png" alt="Card image cap">
                     <div class="card-body">
                         <h5 class="card-title">Absolutely FAB</h5>
                         <p>GOOGLE DESIGN</p>
-                        <p class="card-text">How the floating action button (FAB) became an iconic element of Material
+                        <p class="card-text">How the floating action button (FAB) became an iconic element
+                            of
+                            Material
                             Design
                         </p>
                     </div>
                 </div>
-                <div class="card col-lg-4 pl-3 border-0" style="width: 18rem;">
+                <div class="card col-lg-4 col-12 border-0">
                     <img class="card-img-top" src="./assets/fwb.png" alt="Card image cap">
                     <div class="card-body">
                         <h5 class="card-title">Finding Wellbeing in Filters and Selfies</h5>
                         <p>MATERIAL BLOG</p>
-                        <p class="card-text">How to build transparency and control into face retouching features
+                        <p class="card-text">How to build transparency and control into face retouching
+                            features
                         </p>
                     </div>
                 </div>
             </div>
-
         </div>
     </div>
+
     <!-- Footer -->
-    <div class="footer p-5 text-dark bg-white">
+    <div class="container p-5 text-dark bg-white">
         <div class="row">
-            <div class="d-flex align-items-center text-center">
-                <p class="ml-4">Google</p>
-                <p class="ml-4">Privacy Policy</p>
-                <p class="ml-4">Terms of Service</p>
-                <p class="ml-4">Feedback</p>
+            <div class="col-12">
+                <div class="row">
+                    <div class="col-md-3 col-6">
+                        <p class="ml-4">Google</p>
+                    </div>
+                    <div class="col-md-3 col-6">
+                        <p class="ml-4">Privacy Policy</p>
+                    </div>
+                    <div class="col-md-3 col-6">
+                        <p class="ml-4">Terms of Service</p>
+                    </div>
+                    <div class="col-md-3 col-6">
+                        <p class="ml-4">Feedback</p>
+                    </div>
+                </div>
             </div>
         </div>
+    </div>
+
+    <!-- jQuery and JS bundle w/ Popper.js -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>
